@@ -26,48 +26,51 @@ npm run start
 
 ### Retrieve Flight Information
 
-**Endpoint**: `GET` https://highlevel-be-api.onrender.com/api/flights/65d0438b12bae3141632094b
+**Endpoint**: `GET` https://travelopia-be.onrender.com/api/flights/65d0bb4e45e50800544bf7d9
 
 **Response:**
 ```json
 {
     "data": {
-        "_id": "65d0438b12bae3141632094b",
-        "flightNumber": "A12B42",
+        "_id": "65d0bb4e45e50800544bf7d9",
+        "flightNumber": "A12B41",
         "airline": "Airline 12",
         "origin": "Origin 12",
         "destination": "Destination 12",
         "departureTime": "2024-02-17T08:11:39.270Z",
         "status": "Delayed",
+        "__v": 0
     }
 }
 ```
 
 ### Retrieve All Flights Information
 
-**Endpoint**: `GET` https://highlevel-be-api.onrender.com/api/flights
+**Endpoint**: `GET` https://travelopia-be.onrender.com/api/flights
 
 **Response:**
 ```json
 {
     "data": [
         {
-            "_id": "65d054cb22c10f1ddeed2188",
-            "flightNumber": "A12B42",
-            "airline": "Airline 12",
-            "origin": "Origin 12",
-            "destination": "Destination 12",
-            "departureTime": "2024-02-17T08:11:39.270Z",
-            "status": "Delayed",
-        },
-        {
-            "_id": "65d054d622c10f1ddeed218a",
+            "_id": "65d0bad345e50800544bf7d2",
             "flightNumber": "A12B42",
             "airline": "Airline 13",
             "origin": "Origin 13",
             "destination": "Destination 13",
             "departureTime": "2024-02-17T08:11:39.270Z",
             "status": "Delayed",
+            "__v": 0
+        },
+        {
+            "_id": "65d0bb4e45e50800544bf7d9",
+            "flightNumber": "A12B41",
+            "airline": "Airline 12",
+            "origin": "Origin 12",
+            "destination": "Destination 12",
+            "departureTime": "2024-02-17T08:11:39.270Z",
+            "status": "Delayed",
+            "__v": 0
         }
     ]
 }
@@ -75,12 +78,12 @@ npm run start
 
 ### Create a Flight
 
-**Endpoint**: `POST` https://highlevel-be-api.onrender.com/api/flights
+**Endpoint**: `POST` https://travelopia-be.onrender.com/api/flights
 
 **Request Body:**
 ```json
 {
-    "flightNumber": "A12B42",
+    "flightNumber": "A12B41",
     "airline": "Airline 12",
     "origin": "Origin 12",
     "destination": "Destination 12",
@@ -97,12 +100,12 @@ npm run start
 
 ### Update a Flight
 
-**Endpoint**: `PATCH` https://highlevel-be-api.onrender.com/api/flights/65d0438b12bae3141632094b
+**Endpoint**: `PATCH` https://travelopia-be.onrender.com/api/flights/65d0bad345e50800544bf7d2
 
 **Request Body:**
 ```json
 {
-    "flightNumber": "A12B43",
+    "flightNumber": "A12B42",
     "airline": "Airline 13",
     "origin": "Origin 13",
     "destination": "Destination 13",
@@ -118,7 +121,7 @@ npm run start
 ```
 ### Delete Flight
 
-**Endpoint**: `DELETE` https://highlevel-be-api.onrender.com/api/flights/65d0438b12bae3141632094b
+**Endpoint**: `DELETE` https://travelopia-be.onrender.com/api/flights/65d0438b12bae3141632094b
 
 **Response:**
 ```json
